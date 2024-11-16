@@ -18,9 +18,7 @@ Write a function that, for a fixed group size, randomly draws “birthdays” fo
 check_duplicate_birthday =
   function(n) {
     
-  birthdays = sample(1:365,
-                     n, 
-                     replace = TRUE)
+  birthdays = sample(1:365, n, replace = TRUE)
   
   any(duplicated(birthdays))
 }
@@ -57,7 +55,7 @@ ggplot(df_plot_prob, aes(x = groupsize,
   theme_minimal()
 ```
 
-*The probability that at least two people in the group will share a birthday increases as the group size grows. When the group size reached 23, the probability exceeds 50%.*
+*The probability that at least two people in the group will share a birthday increases as the group size grows. Around a group size of 23, the probability exceeds 50%.*
 
 
 # Problem 2
